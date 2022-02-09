@@ -1,0 +1,18 @@
+span {
+  height: 5px;
+  width: 50px;
+  background-color: black;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.hamburger {
+  .active {
+    span {
+      :nth-child(1) {
+        background: red;
+      }
+    }
+  }
+}

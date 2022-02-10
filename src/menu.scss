@@ -3,16 +3,17 @@ span {
   width: 50px;
   background-color: black;
   border-radius: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   display: block;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
 .hamburger {
-  .active {
-    span {
-      :nth-child(1) {
-        background: red;
-      }
-    }
-  }
+  position: absolute;
+  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }

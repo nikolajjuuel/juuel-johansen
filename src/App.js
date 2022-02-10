@@ -9,9 +9,9 @@ function App() {
     <div className="App">
 
       <Menu />
-      <Projects name='name' tools='tools' description='description' />
+      {/* <Projects name='name' tools='tools' description='description' />
       <Skills />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }

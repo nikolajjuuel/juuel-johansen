@@ -6,19 +6,27 @@ const Menu = () => {
     open: false,
   });
 
+  const top = {
+    backgroundColor: showMenu.open ? 'orange' : 'black',
+    transform: showMenu.open ? 'rotate(495DEG)' : '',
+    position: showMenu.open ? 'absolute' : '',
+
+  }
+
   const middle = {
     backgroundColor: showMenu.open ? 'orange' : 'black',
-    transform: showMenu.open ? 'rotate(40DEG)' : '',
-
+    transform: showMenu.open ? 'rotate(135DEG)' : '',
+    position: showMenu.open ? 'absolute' : '',
   }
 
   const bottom = {
     backgroundColor: showMenu.open ? 'orange' : 'black',
-    transform: showMenu.open ? 'rotate(115DEG)' : '',
+    transform: showMenu.open ? 'rotate(580DEG)' : '',
+    position: showMenu.open ? 'absolute' : '',
   }
 
+
   const hamburger = {
-    transform: showMenu.open ? 'rotate(27DEG)' : '',
   }
 
 
@@ -43,7 +51,7 @@ const Menu = () => {
   return (
     <div onClick={handleClick} style={hamburger}>
       <div className="hamburger">
-        <span id='top' />
+        <span id='top' style={top} />
         <span id='middle' style={middle} />
         <span id='bottom' style={bottom} />
       </div>

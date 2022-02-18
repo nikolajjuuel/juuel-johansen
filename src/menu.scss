@@ -1,3 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Patua+One&display=swap");
+
+$secondaryFont: "Patua One", cursive;
+$primaryFont: "Maven Pro", sans-serif;
+
+h1 h2 h3 h4 h5 {
+  font-family: $primaryFont;
+}
+
+body {
+  font-family: $primaryFont;
+}
+
 .App {
   height: 100%;
   width: 100%;
@@ -22,11 +35,37 @@ span {
 }
 
 .hamburger {
-  transition: all 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 2rem;
   margin-right: 2rem;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+#top {
+  transform-origin: bottom left;
+}
+
+#bottom {
+  transform-origin: bottom right;
+  margin-bottom: 0px;
+}
+.side-menu {
+  transition: all 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+  background-color: orange;
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  ul {
+    list-style: none;
+  }
+
+  li {
+    margin-bottom: 5px;
+  }
 }

@@ -1,4 +1,6 @@
+import SideMenu from "./SideMenu";
 import { useState } from "react";
+
 import './menu.scss'
 
 const Menu = () => {
@@ -6,27 +8,41 @@ const Menu = () => {
     open: false,
   });
 
-  const top = {
-    backgroundColor: showMenu.open ? 'orange' : 'black',
-    transform: showMenu.open ? 'rotate(495DEG)' : '',
-    position: showMenu.open ? 'absolute' : '',
+  const hamburger = {
+    backgroundColor: showMenu.open ? 'tomato' : '',
+    width: showMenu.open ? '50px' : '',
+    height: showMenu.open ? '50px' : '',
+    borderRadius: showMenu.open ? '50%' : '',
+  }
 
+  const top = {
+    backgroundColor: showMenu.open ? 'white' : 'black',
+    transform: showMenu.open ? 'rotate(450DEG)' : '',
+    width: showMenu.open ? '30px' : '',
+    height: showMenu.open ? '3px' : '',
+    marginLeft: showMenu.open ? '6px' : '',
   }
 
   const middle = {
-    backgroundColor: showMenu.open ? 'orange' : 'black',
-    transform: showMenu.open ? 'rotate(135DEG)' : '',
-    position: showMenu.open ? 'absolute' : '',
+    backgroundColor: showMenu.open ? 'white' : 'black',
+    transform: showMenu.open ? 'rotate(412DEG)' : '',
+    marginTop: showMenu.open ? '5px' : '',
+    width: showMenu.open ? '36px' : '',
+    height: showMenu.open ? '3px' : '',
   }
 
   const bottom = {
-    backgroundColor: showMenu.open ? 'orange' : 'black',
-    transform: showMenu.open ? 'rotate(580DEG)' : '',
-    position: showMenu.open ? 'absolute' : '',
+    backgroundColor: showMenu.open ? 'white' : 'black',
+    transform: showMenu.open ? 'rotate(450DEG)' : '',
+    marginTop: showMenu.open ? '2px' : '',
+    marginRight: showMenu.open ? '11px' : '',
+    width: showMenu.open ? '30px' : '',
+    height: showMenu.open ? '3px' : '',
   }
 
-
-  const hamburger = {
+  const side = {
+    marginLeft: showMenu.open ? '-35%' : '',
+    backgroundColor: showMenu.open ? 'pink' : '',
   }
 
 
@@ -35,44 +51,17 @@ const Menu = () => {
       open: !prevState.open
     }));
 
-    if (showMenu.open === true) {
-      const middle = document.getElementById('middle');
-      middle.style.transform('rotate(45deg)')
-    }
-
-
   }
 
-
-
-
-
-
   return (
-    <div onClick={handleClick} style={hamburger}>
-      <div className="hamburger">
+    <>
+      <div className="hamburger" onClick={handleClick} style={hamburger}>
         <span id='top' style={top} />
         <span id='middle' style={middle} />
         <span id='bottom' style={bottom} />
       </div>
-
-
-      {showMenu.open ? (
-        <div>
-          {/* <ul>
-            <li>About</li>
-            <li>Skills</li>
-            <li>Work</li>
-            <li>Contact</li>
-          </ul> */}
-        </div>
-      ) : (
-        <div>
-
-        </div>
-      )}
-
-    </div>
+      <SideMenu style={side} />
+    </>
   )
 }
 

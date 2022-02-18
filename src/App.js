@@ -7,13 +7,7 @@ import Contact from './Contact';
 function App() {
   return (
     <div className="App">
-      <div className="testing">
-        <Menu />
-
-      </div>
-      {/* <Projects name='name' tools='tools' description='description' />
-      <Skills />
-      <Contact /> */}
+      <Menu />
     </div>
   );
 }

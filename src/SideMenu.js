@@ -18,9 +18,10 @@ const SideMenu = (props) => {
         </ul>
       </div>
       <div className="Contact">
+        <h2> Contact </h2>
         <ul>
-          <li></li>
-          <li></li>
+          <li>nikolaj.juuel@gmail.com</li>
+          <li>604.442.6950</li>
         </ul>
       </div>
       <div className="Socials">

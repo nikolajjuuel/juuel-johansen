@@ -1,0 +1,39 @@
+label,
+textarea {
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+input {
+  border-radius: 8px;
+  border: solid 1px gray;
+  padding: 10px;
+  margin: 5px;
+}
+.about-form {
+  width: 55%;
+  background-color: aliceblue;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+
+.form-3 {
+  display: flex;
+  justify-content: space-between;
+  .label-input {
+  }
+}
+
+.form-2 {
+  display: flex;
+  justify-content: space-between;
+  .label-input {
+  }
+}

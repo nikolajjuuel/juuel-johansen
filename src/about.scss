@@ -1,10 +1,35 @@
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+
 label,
 textarea {
   margin-left: 5px;
   font-size: 13px;
 }
+textarea {
+  margin-right: 5px;
+}
+label {
+  margin-top: 10px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
+}
 
 img {
+  width: auto;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+form {
   width: 100%;
 }
 
@@ -19,15 +44,28 @@ input {
   display: flex;
 }
 
+.about-me {
+  background-color: white;
+  border: solid 1px grey;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+}
+
 .avatar {
   width: 45%;
+  background-color: azure;
+  margin: 2% 2% 2% 0.5%;
+  border-radius: 5px;
+  border: solid 2px orange;
 }
 
 .about-form {
   width: 55%;
   background-color: aliceblue;
-  padding: 2%;
+  margin: 2% 0.5% 2% 2%;
   border-radius: 5px;
+  border: solid 2px orange;
 }
 
 .label-input {
@@ -38,15 +76,20 @@ input {
 }
 
 .form-3 {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  .label-input {
-  }
 }
 
 .form-2 {
   display: flex;
   justify-content: space-between;
-  .label-input {
-  }
+}
+
+.w33 {
+  width: 33%;
+}
+
+.w50 {
+  width: 50%;
 }

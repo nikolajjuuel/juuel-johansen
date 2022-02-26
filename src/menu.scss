@@ -1,21 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Patua+One&display=swap");
-
-$secondaryFont: "Patua One", cursive;
-$primaryFont: "Maven Pro", sans-serif;
-
-h1 h2 h3 h4 h5 {
-  font-family: $primaryFont;
-}
-
-body {
-  font-family: $primaryFont;
-}
-
-.App {
-  height: 100%;
-  width: 100%;
-}
-
 .testing {
   display: flex;
   justify-content: flex-end;

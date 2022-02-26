@@ -1,4 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro&family=Patua+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Prata&display=swap");
+
+// $secondaryFont: "Patua One", cursive;
+// $primaryFont: "Maven Pro", sans-serif;
+
+$secondaryFont: "Prata", serif;
+$primaryFont: "Lato", sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $secondaryFont;
+}
+
+li {
+  list-style: none;
+}
+
+p {
+  margin: 0px;
+}
+
+body {
+  font-family: $primaryFont;
+}
+
 .App {
+  height: 100%;
+  width: 100%;
   text-align: center;
 }
 

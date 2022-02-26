@@ -5,7 +5,7 @@ import './menu.scss'
 
 const Menu = () => {
   const [showMenu, SetShowMenu] = useState({
-    open: false,
+    open: true,
   });
 
   const hamburger = {
